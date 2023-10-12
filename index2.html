@@ -1,0 +1,68 @@
+<!--Third Quiz-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Quiz Game TO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="quiz-container">
+        <h2>Part 3 Quiz Game</h2>
+
+        <button id="start-button">Start Part 3 Quiz Time</button>
+        <div id="questions-container" style="display: none;">
+            <!-- Question 1: Multiple Choice -->
+            <div class="question">
+                <p><strong>Question 1.3:</strong>Convert this Hexadecimal (1AF5) to Binary?</p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q1" value="tama"> 0001 1010 1111 0101 <!--ito tama-->
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="mali"> 0000 1101 0110 1111 
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="mali"> 0101 1011 000 1101
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2: Fill in the Blank -->
+            <div class="question">
+                <p><strong>Question 2.3:</strong> It is a transmission medium through which the signal transmission takes place.
+                </p> <!--Channel-->
+                <input type="text" id="q2-answer" placeholder="Type your answer here">
+            </div>
+
+            <!-- Question 3: True or False -->
+            <div class="question">
+                <p><strong>Question 3.3:</strong> True or False: Connectionless Protocols are protocols where data are exchanged in an unplanned fashion 
+                without prior coordination between endpoints.</p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q3" value="true"> True
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="false"> False
+                    </label>
+                </div>
+            </div>
+
+            <button id="submit-button">Submit</button>
+        </div>
+        
+        <div id="result-container" style="display: none;">
+            <h2>Results</h2>
+            <p id="score"></p>
+            <a href="https://shantist.github.io/quizkeyAns/"><button type="button">View Key Answer</button></a>
+        </div>
+    </div>
+
+    <script src="jaba2.js"></script>
+</body>
+</html>
